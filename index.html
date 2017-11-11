@@ -7,14 +7,17 @@
     <link href="_css/main.css" rel="stylesheet">
     <script src="_js/modernizr.js"></script>
     <script>
-    Modernizr.load({
+    Modernizr.load([{
       load: "//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js",
       complete: function () {
         if(!window.jQuery){
           Modernizr.load("_js/jquery-3.2.1.js");
         }
-      }
-    });
+      },
+    },
+    {
+      load: "_js/game.js"
+    }]);
     </script>
   </head>
   <body>
@@ -22,6 +25,14 @@
       <div id="top_bar"></div>
       <div id="game"></div>
       <div id="footer_bar"></div>
+        <div id="start_game" class="dialog">
+          <div id="start_game_message">
+          <h2>Start a new game</h2>
+        </div>
+        <div class="but_start_game button">
+          New Game
+        </div>
+      </div>
     </div>
   </body>
 </html>
