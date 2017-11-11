@@ -40,6 +40,7 @@ x overflow: hidden;
 y height: 48px;
  background-color: #369;
 }
+<<<<<<< HEAD
 #board
 {
  position: absolute;
@@ -48,6 +49,8 @@ y height: 48px;
  width: 760px;
  height: 620px;
 }
+=======
+>>>>>>> 9fa6914ada67dff5b889661fc8d3c126aa07b5a3
 
 .dialog
 {
